@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vibecraft: Shape Your Echo</title>
+<style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; background-color: #f4f4f4; }
+    .container { width: 80%; margin: auto; overflow: hidden; }
+    header { background: #0057b7; color: #ffffff; padding-top: 30px; min-height: 70px; border-bottom: #0779e4 3px solid; }
+    nav { float: right; margin-top: 10px; }
+    nav {
+        float: right;
+        margin-top: 10px;
+    }
+
+    /* Styles for larger screens can remain unchanged */
+    @media (min-width: 769px) {
+        nav a {
+            padding: 10px 20px; /* Larger padding for easier clicking on desktop */
+        }
+    }
+
+    /* Media query for mobile devices */
+    @media (max-width: 768px) {
+        nav {
+            float: none; /* Disable floating */
+            text-align: center; /* Center-align the links */
+            width: 100%; /* Full width */
+            margin-top: 0; /* Adjust margin */
+        }
+
+        nav a {
+            display: block; /* Stack links vertically */
+            padding: 10px; /* More padding for a touch-friendly interface */
+            border-bottom: 1px solid #ccc; /* Adds a separator between links */
+        }
+    }
+
+    nav a { color: #ffffff; text-decoration: none; padding: 10px 20px; font-size: 17px; }
+    nav a:hover { background-color: #0141a2; }
+    .hero { height: 400px; background: url('src/hero.webp') no-repeat 0px -100px; display: flex; justify-content: center; align-items: center; text-align: center; }
+    .hero h1 { color: #ffffff; font-size: 40px; }
+
+    .hero {
+        height: 250px; /* Reduced height for mobile screens */
+        background: url('src/hero.webp') no-repeat center center; /* Center the image properly */
+        background-size: cover; /* Ensure the background covers the full area of the div */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px; /* Add padding to ensure text does not touch the edges */
+    }
+
+    .hero h1 {
+        color: #ffffff;
+        font-size: 24px; /* Reduce the font size for mobile devices */
+        padding: 0 10px; /* Add padding to handle edge cases on very small screens */
+        line-height: 1.2; /* Adjust line height for better readability */
+    }
+
+
+    section { margin: 50px 0; }
+    .feature-icons { text-align: center; }
+    .feature-icons img { width: 100px; }
+    .testimonial { background-color: #ffffff; padding: 20px; margin-top: 20px; box-shadow: 0 0 10px #ccc; }
+    .cta { background-color: #0057b7; color: #ffffff; padding: 20px; text-align: center; }
+    .cta h1 { margin: 0; }
+    footer { background-color: #0057b7; color: #ffffff; text-align: center; padding: 10px; position: fixed; left: 0; bottom: 0; width: 100%; }
+</style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Vibecraft</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Features</a>
+            <a href="#">Testimonials</a>
+            <a href="#">Download</a>
+        </nav>
+    </div>
+</header>
+<div class="hero">
+    <h1>Shape Your Echo with Vibecraft</h1>
+</div>
+<section class="container">
+    <h2>Features</h2>
+    <div class="feature-icons">
+        <img src="src/feature1-icon.webp" alt="Feature 1">
+        <h3>Automated Curation</h3>
+        <p>Automatically refine your feed to highlight the best content.</p>
+
+        <img src="src/feature2-icon.webp" alt="Feature 2">
+        <h3>Community Focus</h3>
+        <p>Target and enhance visibility within specific community niches.</p>
+
+        <img src="src/feature3-icon.webp" alt="Feature 3">
+        <h3>Data Compliance</h3>
+        <p>Adheres strictly to data protection laws to keep your activity safe.</p>
+    </div>
+</section>
+<section class="container">
+    <h2>Testimonials</h2>
+    <div class="testimonial">
+        <p>"Using Vibecraft has simplified managing my Twitter account and increased my engagement exponentially." - Florine Ritter</p>
+    </div>
+    <div class="testimonial">
+        <p>"The community focus feature has been invaluable for building presence in niche markets." - John Rainwater</p>
+    </div>
+    <div class="testimonial">
+        <p>"Just amazing and simple to use" - Timothy Ivaikin</p>
+    </div>
+</section>
+<div class="cta">
+    <h1>Ready to Amplify Your Digital Presence?</h1>
+    <a href="#" class="download-button">Download Vibecraft Now</a>
+</div>
+<footer>
+    <p>&copy; 2024 Vibecraft. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
